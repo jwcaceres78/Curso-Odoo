@@ -7,8 +7,8 @@
 :root {
   /* Color Palette */
   --odoo-purple: #714B67;
-  --odoo-purple-dark: #4A2E44;
-  --odoo-purple-light: #9B6C92;
+  --odoo-purple-dark: #56394F;
+  --odoo-purple-light: #9C7A93;
   --odoo-teal: #00A09D;
   --odoo-teal-glow: rgba(0, 160, 157, 0.4);
   --peru-gold: #E6C200;
@@ -16,12 +16,12 @@
   --peru-red: #D9383A;
   
   /* Backgrounds & Surfaces */
-  --bg-dark: #090D14;
-  --bg-surface-1: #111827;
-  --bg-surface-2: #1F2937;
-  --bg-glass: rgba(17, 24, 39, 0.7);
+  --bg-dark: #171218;
+  --bg-surface-1: #241C23;
+  --bg-surface-2: #30252E;
+  --bg-glass: rgba(36, 28, 35, 0.82);
   --border-glass: rgba(255, 255, 255, 0.1);
-  --border-active: rgba(0, 160, 157, 0.5);
+  --border-active: rgba(113, 75, 103, 0.65);
 
   /* Typography */
   --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -118,7 +118,7 @@ body {
 }
 
 .logo-badge {
-  background: linear-gradient(135deg, var(--odoo-purple), var(--odoo-teal));
+  background: linear-gradient(135deg, var(--odoo-purple), var(--odoo-purple-light));
   padding: 6px 12px;
   border-radius: var(--radius-sm);
   font-size: 0.85rem;
@@ -145,7 +145,7 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--odoo-teal), #007A77);
+  background: linear-gradient(135deg, var(--odoo-purple), var(--odoo-purple-dark));
   color: #FFF;
   border: none;
   padding: 12px 24px;
@@ -156,13 +156,13 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 4px 15px var(--odoo-teal-glow);
+  box-shadow: 0 4px 15px rgba(113, 75, 103, 0.42);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 160, 157, 0.6);
+  box-shadow: 0 6px 20px rgba(113, 75, 103, 0.58);
 }
 
 .btn-secondary {
@@ -229,7 +229,7 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #FFF 30%, var(--odoo-teal) 70%, var(--peru-gold) 100%);
+  background: linear-gradient(135deg, #FFF 25%, var(--odoo-purple-light) 68%, var(--odoo-teal) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -281,11 +281,11 @@ body {
 
 /* SUNAT Interactive Simulator Widget */
 .simulator-widget {
-  background: linear-gradient(180deg, #161E2E 0%, #0F172A 100%);
+  background: linear-gradient(180deg, #2B2029 0%, #1B151B 100%);
   border: 1px solid var(--border-active);
   border-radius: var(--radius-lg);
   padding: 28px;
-  box-shadow: 0 15px 40px rgba(0, 160, 157, 0.15);
+  box-shadow: 0 15px 40px rgba(113, 75, 103, 0.22);
 }
 
 .sim-header {
@@ -338,7 +338,7 @@ body {
 }
 
 .sim-select:focus, .sim-input:focus {
-  border-color: var(--odoo-teal);
+  border-color: var(--odoo-purple);
 }
 
 .sim-row {
@@ -541,7 +541,7 @@ body {
 
 .pricing-card.featured {
   border-color: var(--odoo-teal);
-  background: linear-gradient(180deg, rgba(0, 160, 157, 0.1) 0%, var(--bg-surface-1) 100%);
+  background: linear-gradient(180deg, rgba(113, 75, 103, 0.18) 0%, var(--bg-surface-1) 100%);
 }
 
 .popular-badge {
