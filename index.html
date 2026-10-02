@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso Funcional Odoo 20 Localización Peruana | SUNAT, SIRE y Facturación Electrónica</title>
+  <meta name="description" content="Aprende a configurar e implementar Odoo 20 con la localización peruana 100% oficial SUNAT: Facturación UBL 2.1, SIRE RVIE/RCE, Guías de Remisión GRE, Detracciones y PCGE.">
+  <meta name="keywords" content="Odoo 20 Peru, Localizacion Peruana Odoo, Facturacion Electronica SUNAT, SIRE Odoo, Guia de Remision GRE Odoo, PCGE Odoo 20">
+  
+  <!-- CSS Stylesheet & FontAwesome Icons -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Glow Decorative Elements -->
+  <div class="bg-glow-1"></div>
+  <div class="bg-glow-2"></div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo-brand">
+        <i class="fa-solid fa-cubes-stacked" style="color: var(--odoo-teal);"></i>
+        <span>Odoo 20 <span style="color: var(--odoo-teal);">Perú</span></span>
+        <span class="logo-badge">CURSO FUNCIONAL</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#simulador">Simulador SUNAT</a></li>
+        <li><a href="#temario">Temario</a></li>
+        <li><a href="#calculadora">Calculadora ROI</a></li>
+        <li><a href="#precios">Precios</a></li>
+      </ul>
+      <a href="#precios" class="btn-primary btn-enroll">
+        <i class="fa-solid fa-graduation-cap"></i> Inscribirme Ahora
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Hero Section -->
+  <section id="inicio" class="hero-section">
+    <div class="container hero-grid">
+      
+      <!-- Hero Content Column -->
+      <div class="hero-content">
+        <div class="tag-pill">
+          <span class="dot"></span> Novedad 2026 • Odoo 20 Localización Oficial SUNAT
+        </div>
+        <h1 class="hero-title">
+          Domina <span class="text-gradient">Odoo 20</span> con Localización Peruana sin Complicaciones
+        </h1>
+        <p class="hero-subtitle">
+          El curso práctico definitivo para contadores, administradores y consultores ERP en Perú. Aprende a implementar Facturación Electrónica UBL 2.1, SIRE, Guías GRE y PCGE de forma automatizada.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#precios" class="btn-primary btn-enroll">
+            <i class="fa-solid fa-rocket"></i> Reservar Mi Cupo con Descuento
+          </a>
+          <a href="#simulador" class="btn-secondary">
+            <i class="fa-solid fa-play"></i> Probar Simulador SUNAT
+          </a>
+        </div>
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <strong>+850</strong>
+            <span>Profesionales Capacitados</span>
+          </div>
+          <div class="metric-item">
+            <strong>100%</strong>
+            <span>Normativa SUNAT Al Día</span>
+          </div>
+          <div class="metric-item">
+            <strong>S/ 0.00</strong>
+            <span>Multas por Errores SIRE</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Interactive Widget Column -->
+      <div id="simulador" class="hero-widget">
+        <div class="simulator-widget">
+          <div class="sim-header">
+            <h3><i class="fa-solid fa-microchip" style="color: var(--odoo-teal);"></i> Simulador SUNAT Odoo 20</h3>
+            <span class="sim-badge">EN VIVO</span>
+          </div>
+          <div class="sim-form-group">
+            <label for="sim-doc-type">Tipo de Comprobante SUNAT:</label>
+            <select id="sim-doc-type" class="sim-select">
+              <option value="01">Factura Electrónica (01)</option>
+              <option value="03">Boleta de Venta Electrónica (03)</option>
+              <option value="07">Nota de Crédito Electrónica (07)</option>
+              <option value="09">Guía de Remisión Remitente GRE (09)</option>
+            </select>
+          </div>
+          <div class="sim-row">
+            <div class="sim-form-group">
+              <label for="sim-ruc">RUC / DNI Cliente:</label>
+              <input type="text" id="sim-ruc" class="sim-input" value="20601234567" placeholder="Ej. 20601234567">
+            </div>
+            <div class="sim-form-group">
+              <label for="sim-amount">Monto Total (S/ Inc. IGV):</label>
+              <input type="number" id="sim-amount" class="sim-input" value="1180.00" placeholder="1180">
+            </div>
+          </div>
+          <div class="sim-form-group" style="display: flex; align-items: center; gap: 8px; margin-top: 4px;">
+            <input type="checkbox" id="sim-detraction" checked style="accent-color: var(--odoo-teal);">
+            <label for="sim-detraction" style="margin: 0; cursor: pointer;">Aplicar Detracción SPOT (12% Servicios)</label>
+          </div>
+          <button id="btn-simulate" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 12px;">
+            <i class="fa-solid fa-bolt"></i> Simular Emisión en Odoo 20
+          </button>
+
+          <div class="sim-output">
+            <pre id="sim-output-text">⚡ Haz clic en "Simular Emisión en Odoo 20" para ver la respuesta del servidor SUNAT, la firma UBL 2.1 y el asiento PCGE generado.</pre>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section" style="background: rgba(255,255,255,0.015); border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass);">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <div class="section-subtitle">Normativa SUNAT Garantizada</div>
+        <h2 class="section-title">Lo que aprenderás a implementar paso a paso</h2>
+        <p class="section-description">A diferencia de otros cursos genéricos, nos enfocamos en los dolores reales del mercado tributario en Perú.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+        <div class="glass-card">
+          <i class="fa-solid fa-file-invoice-dollar" style="font-size: 2.2rem; color: var(--odoo-teal); margin-bottom: 16px;"></i>
+          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Facturación UBL 2.1 & OSE</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Configuración nativa de conectores OSE / PSE para emisión de Facturas, Boletas y Notas de Crédito con validaciones de código QR y firma digital.</p>
+        </div>
+
+        <div class="glass-card">
+          <div style="position: absolute; top: 16px; right: 16px; background: rgba(230, 194, 0, 0.2); color: var(--peru-gold); font-size: 0.75rem; font-weight: 700; padding: 4px 8px; border-radius: 4px;">OBLIGATORIO</div>
+          <i class="fa-solid fa-building-columns" style="font-size: 2.2rem; color: var(--peru-gold); margin-bottom: 16px;"></i>
+          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">SIRE RVIE & RCE SUNAT</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Generación de archivos de propuesta y reemplazo para el Registro de Ventas e Ingresos (RVIE) y Registro de Compras (RCE) en formato TXT / Zip.</p>
+        </div>
+
+        <div class="glass-card">
+          <i class="fa-solid fa-truck-fast" style="font-size: 2.2rem; color: #60A5FA; margin-bottom: 16px;"></i>
+          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Guías Remisión Electrónicas (GRE)</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Emisión de GRE Remitente con motivos de traslado, ubigeos SUNAT, modalidad de transporte y vinculación directa con inventario en Odoo 20.</p>
+        </div>
+
+        <div class="glass-card">
+          <i class="fa-solid fa-calculator" style="font-size: 2.2rem; color: #F472B6; margin-bottom: 16px;"></i>
+          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Detracciones (SPOT) & PCGE</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Manejo automático de porcentajes de detracción (12%, 10%, 4%), generación del lote masivo para Banco de la Nación y Plan Contable PCGE 2020.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Syllabus Accordion Section -->
+  <section id="temario" class="section">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <div class="section-subtitle">Estructura Instruccional</div>
+        <h2 class="section-title">Temario Completo del Curso Funcional</h2>
+        <p class="section-description">Diseñado modularmente por nuestros consultores expertos para llevarte de cero a experto.</p>
+      </div>
+
+      <div class="syllabus-grid">
+        
+        <!-- Module 1 -->
+        <div class="module-card active">
+          <div class="module-header">
+            <div class="module-info">
+              <div class="module-num">1</div>
+              <div class="module-title-text">
+                <h4>Módulo 1: Fundamentos y Datos Maestros en Odoo 20</h4>
+                <div class="module-meta">3 Lecciones • 2 Horas Prácticas • Taller Guiado</div>
+              </div>
+            </div>
+            <i class="fa-solid fa-chevron-down" style="color: var(--text-muted);"></i>
+          </div>
+          <div class="module-body">
+            <ul class="lesson-list">
+              <li><i class="fa-solid fa-circle-check"></i> Configuración de la Compañía: RUC 11 dígitos, Dirección Fiscal, Domiciliado.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Catálogos SUNAT: Tipos de Documento Identidad (DNI, RUC, CE, Pasaporte).</li>
+              <li><i class="fa-solid fa-circle-check"></i> Consulta automática RUC/DNI integrada a Odoo 20 via API Padron SUNAT.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="module-card">
+          <div class="module-header">
+            <div class="module-info">
+              <div class="module-num">2</div>
+              <div class="module-title-text">
+                <h4>Módulo 2: Facturación Electrónica UBL 2.1 y Documentos Relacionados</h4>
+                <div class="module-meta">4 Lecciones • 3 Horas Prácticas • Laboratorio OSE</div>
+              </div>
+            </div>
+            <i class="fa-solid fa-chevron-down" style="color: var(--text-muted);"></i>
+          </div>
+          <div class="module-body">
+            <ul class="lesson-list">
+              <li><i class="fa-solid fa-circle-check"></i> Emisión de Facturas (01) y Boletas (03) con IGV 18%, Exonerado e Inafecto.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Notas de Crédito (07) por Anulación de Operación y Descuento Global.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Descarga de Comprobantes XML, CDR (Constancia de Recepción) y Representación Impresa PDF.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="module-card">
+          <div class="module-header">
+            <div class="module-info">
+              <div class="module-num">3</div>
+              <div class="module-title-text">
+                <h4>Módulo 3: Guías de Remisión Electrónicas (GRE) & Almacén</h4>
+                <div class="module-meta">3 Lecciones • 2 Horas Prácticas • Integración Inventario</div>
+              </div>
+            </div>
+            <i class="fa-solid fa-chevron-down" style="color: var(--text-muted);"></i>
+          </div>
+          <div class="module-body">
+            <ul class="lesson-list">
+              <li><i class="fa-solid fa-circle-check"></i> Configuración del módulo GRE Remitente (09) en Odoo 20.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Traslado entre Establecimientos de la misma empresa vs Venta de Mercadería.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Validación de datos del conductor, Licencia de Conducir y Placa del Vehículo.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Module 4 -->
+        <div class="module-card">
+          <div class="module-header">
+            <div class="module-info">
+              <div class="module-num">4</div>
+              <div class="module-title-text">
+                <h4>Módulo 4: Contabilidad PCGE y Reportes SIRE SUNAT</h4>
+                <div class="module-meta">5 Lecciones • 4 Horas Prácticas • Caso Real Cierre</div>
+              </div>
+            </div>
+            <i class="fa-solid fa-chevron-down" style="color: var(--text-muted);"></i>
+          </div>
+          <div class="module-body">
+            <ul class="lesson-list">
+              <li><i class="fa-solid fa-circle-check"></i> Plan Contable General Empresarial 2020 adaptado a Odoo 20.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Sincronización del Tipo de Cambio diario SUNAT/SBS.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Generación y validación de estructuras TXT para el SIRE RVIE y RCE.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI Calculator Section -->
+  <section id="calculadora" class="section" style="background: rgba(0, 160, 157, 0.03); border-top: 1px solid var(--border-glass);">
+    <div class="container">
+      <div class="glass-card roi-card">
+        <div>
+          <div class="section-subtitle">Calculadora de Impacto</div>
+          <h2 style="font-size: 2rem; margin-bottom: 16px;">¿Cuánto tiempo y dinero ahorrarás con Odoo 20?</h2>
+          <p style="color: var(--text-muted);">Mueve el deslizador para ver cuánto tiempo operativo en gestión SIRE y facturación manual automatizarás en tu empresa o estudio contable.</p>
+          
+          <div class="roi-slider-container">
+            <label style="font-weight: 700; color: var(--text-main);">Volumen de Comprobantes Emitidos/Recibidos por Mes:</label>
+            <input type="range" id="roi-slider" class="roi-slider" min="20" max="1000" step="20" value="150">
+            <div style="display: flex; justify-content: space-between; font-weight: 800; color: var(--odoo-teal);">
+              <span>20 comprobantes</span>
+              <span id="roi-invoice-count">150 comprobantes/mes</span>
+              <span>1000+ comprobantes</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="roi-stat-box">
+            <div id="roi-hours-saved" class="roi-stat-number">38 hrs/mes</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">Tiempo Operativo Ahorrado</div>
+          </div>
+          <div class="roi-stat-box" style="border-color: var(--peru-gold); background: rgba(230, 194, 0, 0.05);">
+            <div id="roi-money-saved" class="roi-stat-number" style="color: var(--peru-gold);">S/ 3,210</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">Ahorro en Costos y Multas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Cards Section -->
+  <section id="precios" class="section">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <div class="section-subtitle">Inversión Transparente</div>
+        <h2 class="section-title">Elige tu Plan y Asegura tu Vacante</h2>
+        <p class="section-description">Acceso inmediato a la plataforma de aprendizaje, instancias de prueba en Odoo 20 y certificados de participación.</p>
+      </div>
+
+      <div class="pricing-grid">
+        
+        <!-- Plan Basic -->
+        <div class="pricing-card">
+          <h3 style="font-size: 1.3rem;">Plan Funcional</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">Para usuarios que buscan dominar el uso operativo.</p>
+          <div class="price-tag">S/ 390 <span>/ pago único</span></div>
+          <ul class="feature-list">
+            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Acceso a los 4 Módulos Grabados</li>
+            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Plantillas Excel SIRE & Guías PDF</li>
+            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Acceso por 6 meses a la plataforma</li>
+            <li><i class="fa-solid fa-xmark" style="color: var(--text-dim);"></i> Instancia Privada Odoo 20 en la nube</li>
+            <li><i class="fa-solid fa-xmark" style="color: var(--text-dim);"></i> Certificado Consultor Funcional</li>
+          </ul>
+          <a href="#" class="btn-secondary btn-enroll" style="justify-content: center;">Elegir Plan Funcional</a>
+        </div>
+
+        <!-- Plan Professional (Featured) -->
+        <div class="pricing-card featured">
+          <div class="popular-badge">MÁS POPULAR</div>
+          <h3 style="font-size: 1.3rem;">Consultor Certificado</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">Para contadores y consultores que buscan certificarse.</p>
+          <div class="price-tag" style="color: var(--odoo-teal);">S/ 690 <span>/ pago único</span></div>
+          <ul class="feature-list">
+            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Todo lo del Plan Funcional</li>
+            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> <strong>Instancia Privada Odoo 20 Perú (30 días)</strong></li>
+            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Sesiones en Vivo de Preguntas & Respuestas</li>
+            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Certificado Oficial de Consultor Funcional</li>
+            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Grupo Privado de WhatsApp con Especialistas</li>
+          </ul>
+          <a href="#" class="btn-primary btn-enroll" style="justify-content: center;">Inscribirme en Consultor</a>
+        </div>
+
+        <!-- Plan Corporate -->
+        <div class="pricing-card">
+          <h3 style="font-size: 1.3rem;">Plan Empresarial</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">Para equipos contables y empresas implementadoras.</p>
+          <div class="price-tag">S/ 1,490 <span>/ pago único</span></div>
+          <ul class="feature-list">
+            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Hasta 5 Licencias de Estudiantes</li>
+            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Asesoría Personalizada de 2 Horas</li>
+            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Revisión de Base de Datos Real de la Empresa</li>
+            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Factura Comercial con IGV Incluido</li>
+          </ul>
+          <a href="#" class="btn-secondary btn-enroll" style="justify-content: center;">Contactar Ventas B2B</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Registration Form -->
+  <div id="enroll-modal" class="modal-overlay">
+    <div class="modal-box">
+      <button id="close-modal" class="close-modal">&times;</button>
+      <h3 style="font-size: 1.5rem; margin-bottom: 8px;">Inscripción al Curso Odoo 20 Perú</h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">Completa tus datos para enviarte los accesos inmediatos a la plataforma de aprendizaje.</p>
+
+      <form id="enroll-form">
+        <div class="sim-form-group">
+          <label for="student-name">Nombre Completo:</label>
+          <input type="text" id="student-name" class="sim-input" placeholder="Ej. Juan Pérez" required>
+        </div>
+        <div class="sim-form-group">
+          <label for="student-email">Correo Electrónico (Para accesos):</label>
+          <input type="email" id="student-email" class="sim-input" placeholder="juan.perez@empresa.pe" required>
+        </div>
+        <div class="sim-form-group">
+          <label for="student-phone">Teléfono / WhatsApp Perú:</label>
+          <input type="tel" id="student-phone" class="sim-input" placeholder="987654321" required>
+        </div>
+        <div class="sim-form-group">
+          <label for="student-plan">Plan Seleccionado:</label>
+          <select id="student-plan" class="sim-select">
+            <option value="consultor">Consultor Certificado (S/ 690)</option>
+            <option value="funcional">Plan Funcional (S/ 390)</option>
+            <option value="empresarial">Plan Empresarial (S/ 1,490)</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 16px;">
+          <i class="fa-solid fa-lock"></i> Confirmar Mi Registro
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Curso Funcional Odoo 20 Localización Peruana. Todos los derechos reservados.</p>
+      <p style="font-size: 0.8rem; margin-top: 8px;">Odoo es una marca registrada de Odoo S.A. Este curso es un programa de capacitación independiente sobre localización tributaria en Perú.</p>
+    </div>
+  </footer>
+
+  <!-- App JS -->
+  <script src="app.js"></script>
+</body>
+</html>
