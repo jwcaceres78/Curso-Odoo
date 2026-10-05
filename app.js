@@ -3,75 +3,13 @@
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initSimulator();
-  initAccordion();
+initAccordion();
   initRoiCalculator();
   initModal();
 });
 
 /* --------------------------------------------------------------------------
-   1. Interactive SUNAT & Odoo 20 Comprobante Simulator
-   -------------------------------------------------------------------------- */
-function initSimulator() {
-  const docTypeSelect = document.getElementById('sim-doc-type');
-  const rucInput = document.getElementById('sim-ruc');
-  const amountInput = document.getElementById('sim-amount');
-  const detractionCheck = document.getElementById('sim-detraction');
-  const btnSimulate = document.getElementById('btn-simulate');
-  const outputBox = document.getElementById('sim-output-text');
-
-  if (!btnSimulate || !outputBox) return;
-
-  btnSimulate.addEventListener('click', () => {
-    const docType = docTypeSelect.value;
-    const ruc = rucInput.value || '20601234567';
-    const amount = parseFloat(amountInput.value) || 1180.00;
-    const isDetraction = detractionCheck.checked;
-
-    // Calculation SUNAT IGV 18%
-    const baseAmount = (amount / 1.18).toFixed(2);
-    const igvAmount = (amount - baseAmount).toFixed(2);
-    const detractionAmount = isDetraction ? (amount * 0.12).toFixed(2) : 0;
-
-    let docName = 'FACTURA ELECTRÓNICA';
-    let docSerie = 'F001-00004521';
-    let accountDebt = '12121 - Facturas Emitidas en Cartera (PEN)';
-
-    if (docType === '03') {
-      docName = 'BOLETA DE VENTA ELECTRÓNICA';
-      docSerie = 'B001-00008912';
-    } else if (docType === '07') {
-      docName = 'NOTA DE CRÉDITO ELECTRÓNICA';
-      docSerie = 'FC01-00000341';
-      accountDebt = '12129 - Notas de Crédito por Aplicar (PEN)';
-    } else if (docType === '09') {
-      docName = 'GUÍA DE REMISIÓN ELECTRÓNICA REMITENTE (GRE)';
-      docSerie = 'EG01-00001209';
-    }
-
-    outputBox.innerHTML = `<span style="color: #6EE7B7;">⚡ [ODOO 20 LOCALIZACIÓN PERUANA] PROCESANDO CON SUNAT OSE...</span>\n` +
-      `------------------------------------------------------------\n` +
-      `• ESTADO SUNAT: <span style="color: #34D399; font-weight: bold;">[ACEPTADO] ✅ (CDR Recibido de SUNAT)</span>\n` +
-      `• TIPO COMPROBANTE: ${docName} (${docSerie})\n` +
-      `• ADQUIRIENTE / RUC: ${ruc} - RAZÓN SOCIAL VALIDADA RUC AL DÍA\n` +
-      `------------------------------------------------------------\n` +
-      `• MONTO GRAVADO: S/ ${baseAmount}\n` +
-      `• IGV (18% SUNAT): S/ ${igvAmount}\n` +
-      `• IMPORTE TOTAL: S/ ${amount.toFixed(2)}\n` +
-      (isDetraction ? `• DETRACCIÓN SPOT (12%): S/ ${detractionAmount} (Archivo BN Masivo Generado)\n` : '') +
-      `------------------------------------------------------------\n` +
-      `• ASIENTO CONTABLE AUTOMÁTICO PCGE EN ODOO 20:\n` +
-      `   [DEBE]  ${accountDebt}: S/ ${amount.toFixed(2)}\n` +
-      `   [HABER] 70111 - Venta Mercaderías Manufacturadas: S/ ${baseAmount}\n` +
-      `   [HABER] 40111 - IGV Cuenta Propia (SUNAT): S/ ${igvAmount}\n` +
-      `------------------------------------------------------------\n` +
-      `• FIRMA DIGITAL XML UBL 2.1: SHA-256 Validado OK\n` +
-      `• CÓDIGO QR SUNAT: Generado e impreso en el PDF nativo`;
-  });
-}
-
-/* --------------------------------------------------------------------------
-   2. Syllabus Accordion Logic
+   1. Syllabus Accordion Logic
    -------------------------------------------------------------------------- */
 function initAccordion() {
   const moduleHeaders = document.querySelectorAll('.module-header');
@@ -92,7 +30,7 @@ function initAccordion() {
 }
 
 /* --------------------------------------------------------------------------
-   3. ROI & Time Savings Calculator
+   2. ROI & Time Savings Calculator
    -------------------------------------------------------------------------- */
 function initRoiCalculator() {
   const invoiceSlider = document.getElementById('roi-slider');
@@ -117,7 +55,7 @@ function initRoiCalculator() {
 }
 
 /* --------------------------------------------------------------------------
-   4. Modal Registration Form Logic
+   3. Modal Registration Form Logic
    -------------------------------------------------------------------------- */
 function initModal() {
   const modal = document.getElementById('enroll-modal');
