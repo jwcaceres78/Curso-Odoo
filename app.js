@@ -149,7 +149,7 @@ function initModal() {
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      alert('¡Gracias por inscribirte! Un asesor especialista en Odoo 20 Perú se pondrá en contacto contigo vía WhatsApp inmediatamente.');
+      alert('¡Gracias por tu interés en Gemastic Academy! Un asesor se pondrá en contacto contigo para orientarte sobre cursos y membresías.');
       modal.classList.remove('active');
     });
   }
