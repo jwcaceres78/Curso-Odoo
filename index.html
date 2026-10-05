@@ -3,398 +3,348 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gemastic | Curso Funcional Odoo 20 Localización Peruana</title>
-  <meta name="description" content="Aprende a configurar e implementar Odoo 20 con la localización peruana 100% oficial SUNAT: Facturación UBL 2.1, SIRE RVIE/RCE, Guías de Remisión GRE, Detracciones y PCGE.">
-  <meta name="keywords" content="Odoo 20 Peru, Localizacion Peruana Odoo, Facturacion Electronica SUNAT, SIRE Odoo, Guia de Remision GRE Odoo, PCGE Odoo 20">
-  
-  <!-- CSS Stylesheet & FontAwesome Icons -->
+  <title>Gemastic Academy | Cursos de Odoo, IA y Automatización</title>
+  <meta name="description" content="Plataforma de formación práctica de Gemastic. Compra cursos individuales o accede a membresías anuales con cursos, actualizaciones, comunidad y asesoría continua en Odoo, IA y automatización.">
+  <meta name="keywords" content="cursos Odoo, Odoo Peru, Odoo 20, inteligencia artificial, automatizacion, agentes IA, desarrollo Odoo, membresia Odoo">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-  <!-- Glow Decorative Elements -->
   <div class="bg-glow-1"></div>
   <div class="bg-glow-2"></div>
 
-  <!-- Header & Navigation -->
   <header class="navbar">
     <div class="container nav-container">
-      <a href="#" class="logo-brand">
+      <a href="#inicio" class="logo-brand">
         <i class="fa-solid fa-cubes-stacked" style="color: var(--odoo-teal);"></i>
-        <span>Gemastic <span style="color: var(--odoo-teal);">Odoo</span></span>
-        <span class="logo-badge">CURSO FUNCIONAL</span>
+        <span>Gemastic <span style="color: var(--odoo-teal);">Academy</span></span>
+        <span class="logo-badge">ODOO + IA</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#simulador">Simulador SUNAT</a></li>
-        <li><a href="#temario">Temario</a></li>
-        <li><a href="#calculadora">Calculadora ROI</a></li>
-        <li><a href="#precios">Precios</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#membresias">Membresías</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#como-funciona">Cómo funciona</a></li>
       </ul>
-      <a href="#precios" class="btn-primary btn-enroll">
-        <i class="fa-solid fa-graduation-cap"></i> Inscribirme Ahora
+      <a href="#membresias" class="btn-primary">
+        <i class="fa-solid fa-star"></i> Ver Membresías
       </a>
     </div>
   </header>
 
-  <!-- Main Hero Section -->
   <section id="inicio" class="hero-section">
     <div class="container hero-grid">
-      
-      <!-- Hero Content Column -->
       <div class="hero-content">
         <div class="tag-pill">
-          <span class="dot"></span> Novedad 2026 • Odoo 20 Localización Oficial SUNAT
+          <span class="dot"></span> Formación práctica para profesionales y empresas
         </div>
         <h1 class="hero-title">
-          Curso intensivo de Odoo
+          Aprende <span class="text-gradient">Odoo, IA y Automatización</span> con acompañamiento real
         </h1>
         <p class="hero-subtitle">
-          El curso práctico definitivo para contadores, administradores y consultores ERP en Perú. Aprende a implementar Facturación Electrónica UBL 2.1, SIRE, Guías GRE y PCGE de forma automatizada.
+          Elige el curso que necesitas o accede a una membresía anual para aprender de forma continua, resolver dudas reales y contar con asesoría especializada durante todo el año.
         </p>
         <div class="hero-cta-group">
-          <a href="#precios" class="btn-primary btn-enroll">
-            <i class="fa-solid fa-rocket"></i> Reservar Mi Cupo con Descuento
+          <a href="#cursos" class="btn-primary">
+            <i class="fa-solid fa-graduation-cap"></i> Explorar Cursos
           </a>
-          <a href="#simulador" class="btn-secondary">
-            <i class="fa-solid fa-play"></i> Probar Simulador SUNAT
+          <a href="#membresias" class="btn-secondary">
+            <i class="fa-solid fa-infinity"></i> Conocer Membresías
           </a>
         </div>
         <div class="hero-metrics">
           <div class="metric-item">
-            <strong>+850</strong>
-            <span>Profesionales Capacitados</span>
+            <strong>2 formas</strong>
+            <span>Compra individual o membresía</span>
+          </div>
+          <div class="metric-item">
+            <strong>12 meses</strong>
+            <span>De acompañamiento continuo</span>
           </div>
           <div class="metric-item">
             <strong>100%</strong>
-            <span>Normativa SUNAT Al Día</span>
-          </div>
-          <div class="metric-item">
-            <strong>S/ 0.00</strong>
-            <span>Multas por Errores SIRE</span>
+            <span>Enfoque práctico y aplicado</span>
           </div>
         </div>
       </div>
 
-      <!-- Hero Interactive Widget Column -->
-      <div id="simulador" class="hero-widget">
+      <div class="hero-widget">
         <div class="simulator-widget">
           <div class="sim-header">
-            <h3><i class="fa-solid fa-microchip" style="color: var(--odoo-teal);"></i> Simulador SUNAT Odoo 20</h3>
-            <span class="sim-badge">EN VIVO</span>
+            <h3><i class="fa-solid fa-route" style="color: var(--odoo-teal);"></i> Elige tu forma de aprender</h3>
+            <span class="sim-badge">FLEXIBLE</span>
           </div>
-          <div class="sim-form-group">
-            <label for="sim-doc-type">Tipo de Comprobante SUNAT:</label>
-            <select id="sim-doc-type" class="sim-select">
-              <option value="01">Factura Electrónica (01)</option>
-              <option value="03">Boleta de Venta Electrónica (03)</option>
-              <option value="07">Nota de Crédito Electrónica (07)</option>
-              <option value="09">Guía de Remisión Remitente GRE (09)</option>
-            </select>
-          </div>
-          <div class="sim-row">
-            <div class="sim-form-group">
-              <label for="sim-ruc">RUC / DNI Cliente:</label>
-              <input type="text" id="sim-ruc" class="sim-input" value="20601234567" placeholder="Ej. 20601234567">
-            </div>
-            <div class="sim-form-group">
-              <label for="sim-amount">Monto Total (S/ Inc. IGV):</label>
-              <input type="number" id="sim-amount" class="sim-input" value="1180.00" placeholder="1180">
-            </div>
-          </div>
-          <div class="sim-form-group" style="display: flex; align-items: center; gap: 8px; margin-top: 4px;">
-            <input type="checkbox" id="sim-detraction" checked style="accent-color: var(--odoo-teal);">
-            <label for="sim-detraction" style="margin: 0; cursor: pointer;">Aplicar Detracción SPOT (12% Servicios)</label>
-          </div>
-          <button id="btn-simulate" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 12px;">
-            <i class="fa-solid fa-bolt"></i> Simular Emisión en Odoo 20
-          </button>
 
-          <div class="sim-output">
-            <pre id="sim-output-text">⚡ Haz clic en "Simular Emisión en Odoo 20" para ver la respuesta del servidor SUNAT, la firma UBL 2.1 y el asiento PCGE generado.</pre>
+          <div class="glass-card" style="padding: 22px; margin-bottom: 16px;">
+            <div style="display:flex; gap:14px; align-items:flex-start;">
+              <i class="fa-solid fa-cart-shopping" style="font-size:1.5rem; color:var(--odoo-teal);"></i>
+              <div>
+                <h3 style="font-size:1.05rem; margin-bottom:6px;">Compra un curso</h3>
+                <p style="color:var(--text-muted); font-size:.9rem;">Ideal si tienes un objetivo concreto: Odoo funcional, desarrollo, localización peruana, IA o automatización.</p>
+              </div>
+            </div>
           </div>
+
+          <div class="glass-card" style="padding: 22px;">
+            <div style="display:flex; gap:14px; align-items:flex-start;">
+              <i class="fa-solid fa-crown" style="font-size:1.5rem; color:var(--peru-gold);"></i>
+              <div>
+                <h3 style="font-size:1.05rem; margin-bottom:6px;">Hazte miembro</h3>
+                <p style="color:var(--text-muted); font-size:.9rem;">Accede durante un año a formación continua, nuevas clases, recursos, comunidad y sesiones de asesoría.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#membresias" class="btn-primary" style="width:100%; justify-content:center; margin-top:18px;">
+            <i class="fa-solid fa-arrow-right"></i> Comparar opciones
+          </a>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- Features Section -->
-  <section class="section" style="background: rgba(255,255,255,0.015); border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass);">
+  <section id="cursos" class="section" style="background: rgba(255,255,255,0.015); border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass);">
     <div class="container">
       <div class="section-title-wrapper">
-        <div class="section-subtitle">Normativa SUNAT Garantizada</div>
-        <h2 class="section-title">Lo que aprenderás a implementar paso a paso</h2>
-        <p class="section-description">A diferencia de otros cursos genéricos, nos enfocamos en los dolores reales del mercado tributario en Perú.</p>
+        <div class="section-subtitle">Catálogo de formación</div>
+        <h2 class="section-title">Cursos para resolver necesidades reales</h2>
+        <p class="section-description">Compra solo el curso que necesitas y avanza a tu ritmo. Cada programa está orientado a casos reales de implementación, operación y desarrollo.</p>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:24px;">
         <div class="glass-card">
-          <i class="fa-solid fa-file-invoice-dollar" style="font-size: 2.2rem; color: var(--odoo-teal); margin-bottom: 16px;"></i>
-          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Facturación UBL 2.1 & OSE</h3>
-          <p style="color: var(--text-muted); font-size: 0.95rem;">Configuración nativa de conectores OSE / PSE para emisión de Facturas, Boletas y Notas de Crédito con validaciones de código QR y firma digital.</p>
+          <i class="fa-solid fa-layer-group" style="font-size:2rem; color:var(--odoo-teal); margin-bottom:16px;"></i>
+          <div class="section-subtitle" style="font-size:.75rem;">FUNCIONAL</div>
+          <h3 style="font-size:1.25rem; margin-bottom:10px;">Odoo 20 Intensivo</h3>
+          <p style="color:var(--text-muted); font-size:.92rem; margin-bottom:18px;">Ventas, compras, inventarios, CRM, facturación y procesos empresariales desde una visión práctica.</p>
+          <a href="#" class="btn-secondary btn-enroll" style="justify-content:center;">Ver curso</a>
         </div>
 
         <div class="glass-card">
-          <div style="position: absolute; top: 16px; right: 16px; background: rgba(230, 194, 0, 0.2); color: var(--peru-gold); font-size: 0.75rem; font-weight: 700; padding: 4px 8px; border-radius: 4px;">OBLIGATORIO</div>
-          <i class="fa-solid fa-building-columns" style="font-size: 2.2rem; color: var(--peru-gold); margin-bottom: 16px;"></i>
-          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">SIRE RVIE & RCE SUNAT</h3>
-          <p style="color: var(--text-muted); font-size: 0.95rem;">Generación de archivos de propuesta y reemplazo para el Registro de Ventas e Ingresos (RVIE) y Registro de Compras (RCE) en formato TXT / Zip.</p>
+          <i class="fa-solid fa-file-invoice-dollar" style="font-size:2rem; color:var(--peru-gold); margin-bottom:16px;"></i>
+          <div class="section-subtitle" style="font-size:.75rem;">PERÚ</div>
+          <h3 style="font-size:1.25rem; margin-bottom:10px;">Localización Peruana Odoo</h3>
+          <p style="color:var(--text-muted); font-size:.92rem; margin-bottom:18px;">Facturación electrónica, SUNAT, SIRE, GRE, detracciones y configuración contable aplicada al entorno peruano.</p>
+          <a href="#" class="btn-secondary btn-enroll" style="justify-content:center;">Ver curso</a>
         </div>
 
         <div class="glass-card">
-          <i class="fa-solid fa-truck-fast" style="font-size: 2.2rem; color: #60A5FA; margin-bottom: 16px;"></i>
-          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Guías Remisión Electrónicas (GRE)</h3>
-          <p style="color: var(--text-muted); font-size: 0.95rem;">Emisión de GRE Remitente con motivos de traslado, ubigeos SUNAT, modalidad de transporte y vinculación directa con inventario en Odoo 20.</p>
+          <i class="fa-solid fa-code" style="font-size:2rem; color:#60A5FA; margin-bottom:16px;"></i>
+          <div class="section-subtitle" style="font-size:.75rem;">TÉCNICO</div>
+          <h3 style="font-size:1.25rem; margin-bottom:10px;">Desarrollo de Módulos Odoo</h3>
+          <p style="color:var(--text-muted); font-size:.92rem; margin-bottom:18px;">Modelos, vistas, seguridad, lógica de negocio, buenas prácticas y desarrollo de módulos personalizados.</p>
+          <a href="#" class="btn-secondary btn-enroll" style="justify-content:center;">Ver curso</a>
         </div>
 
         <div class="glass-card">
-          <i class="fa-solid fa-calculator" style="font-size: 2.2rem; color: #F472B6; margin-bottom: 16px;"></i>
-          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Detracciones (SPOT) & PCGE</h3>
-          <p style="color: var(--text-muted); font-size: 0.95rem;">Manejo automático de porcentajes de detracción (12%, 10%, 4%), generación del lote masivo para Banco de la Nación y Plan Contable PCGE 2020.</p>
+          <i class="fa-solid fa-robot" style="font-size:2rem; color:#F472B6; margin-bottom:16px;"></i>
+          <div class="section-subtitle" style="font-size:.75rem;">IA</div>
+          <h3 style="font-size:1.25rem; margin-bottom:10px;">Agentes IA para Negocios</h3>
+          <p style="color:var(--text-muted); font-size:.92rem; margin-bottom:18px;">Diseña agentes conversacionales conectados a procesos empresariales, WhatsApp, RAG y herramientas de negocio.</p>
+          <a href="#" class="btn-secondary btn-enroll" style="justify-content:center;">Ver curso</a>
+        </div>
+
+        <div class="glass-card">
+          <i class="fa-solid fa-gears" style="font-size:2rem; color:var(--odoo-purple-light); margin-bottom:16px;"></i>
+          <div class="section-subtitle" style="font-size:.75rem;">AUTOMATIZACIÓN</div>
+          <h3 style="font-size:1.25rem; margin-bottom:10px;">Automatización con IA</h3>
+          <p style="color:var(--text-muted); font-size:.92rem; margin-bottom:18px;">Integra Odoo, APIs, automatizaciones y asistentes inteligentes para reducir tareas repetitivas.</p>
+          <a href="#" class="btn-secondary btn-enroll" style="justify-content:center;">Ver curso</a>
+        </div>
+
+        <div class="glass-card">
+          <i class="fa-solid fa-diagram-project" style="font-size:2rem; color:#34D399; margin-bottom:16px;"></i>
+          <div class="section-subtitle" style="font-size:.75rem;">PRÓXIMAMENTE</div>
+          <h3 style="font-size:1.25rem; margin-bottom:10px;">Arquitectura Odoo + IA</h3>
+          <p style="color:var(--text-muted); font-size:.92rem; margin-bottom:18px;">Diseño de soluciones empresariales que combinan ERP, agentes inteligentes, RAG e integraciones modernas.</p>
+          <a href="#" class="btn-secondary btn-enroll" style="justify-content:center;">Quiero información</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Syllabus Accordion Section -->
-  <section id="temario" class="section">
+  <section id="beneficios" class="section">
     <div class="container">
       <div class="section-title-wrapper">
-        <div class="section-subtitle">Estructura Instruccional</div>
-        <h2 class="section-title">Temario Completo del Curso Funcional</h2>
-        <p class="section-description">Diseñado modularmente por nuestros consultores expertos para llevarte de cero a experto.</p>
+        <div class="section-subtitle">Más que videos grabados</div>
+        <h2 class="section-title">Una plataforma para aprender y aplicar</h2>
+        <p class="section-description">El objetivo no es solo consumir contenido, sino ayudarte a resolver problemas reales en proyectos, implementaciones y negocios.</p>
       </div>
 
-      <div class="syllabus-grid">
-        
-        <!-- Module 1 -->
-        <div class="module-card active">
-          <div class="module-header">
-            <div class="module-info">
-              <div class="module-num">1</div>
-              <div class="module-title-text">
-                <h4>Módulo 1: Fundamentos y Datos Maestros en Odoo 20</h4>
-                <div class="module-meta">3 Lecciones • 2 Horas Prácticas • Taller Guiado</div>
-              </div>
-            </div>
-            <i class="fa-solid fa-chevron-down" style="color: var(--text-muted);"></i>
-          </div>
-          <div class="module-body">
-            <ul class="lesson-list">
-              <li><i class="fa-solid fa-circle-check"></i> Configuración de la Compañía: RUC 11 dígitos, Dirección Fiscal, Domiciliado.</li>
-              <li><i class="fa-solid fa-circle-check"></i> Catálogos SUNAT: Tipos de Documento Identidad (DNI, RUC, CE, Pasaporte).</li>
-              <li><i class="fa-solid fa-circle-check"></i> Consulta automática RUC/DNI integrada a Odoo 20 via API Padron SUNAT.</li>
-            </ul>
-          </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:24px;">
+        <div class="glass-card">
+          <i class="fa-solid fa-video" style="font-size:1.9rem; color:var(--odoo-teal); margin-bottom:14px;"></i>
+          <h3 style="margin-bottom:8px;">Contenido actualizado</h3>
+          <p style="color:var(--text-muted);">Clases prácticas, nuevas versiones, herramientas y casos de uso que se incorporan progresivamente.</p>
         </div>
-
-        <!-- Module 2 -->
-        <div class="module-card">
-          <div class="module-header">
-            <div class="module-info">
-              <div class="module-num">2</div>
-              <div class="module-title-text">
-                <h4>Módulo 2: Facturación Electrónica UBL 2.1 y Documentos Relacionados</h4>
-                <div class="module-meta">4 Lecciones • 3 Horas Prácticas • Laboratorio OSE</div>
-              </div>
-            </div>
-            <i class="fa-solid fa-chevron-down" style="color: var(--text-muted);"></i>
-          </div>
-          <div class="module-body">
-            <ul class="lesson-list">
-              <li><i class="fa-solid fa-circle-check"></i> Emisión de Facturas (01) y Boletas (03) con IGV 18%, Exonerado e Inafecto.</li>
-              <li><i class="fa-solid fa-circle-check"></i> Notas de Crédito (07) por Anulación de Operación y Descuento Global.</li>
-              <li><i class="fa-solid fa-circle-check"></i> Descarga de Comprobantes XML, CDR (Constancia de Recepción) y Representación Impresa PDF.</li>
-            </ul>
-          </div>
+        <div class="glass-card">
+          <i class="fa-solid fa-comments" style="font-size:1.9rem; color:var(--odoo-teal); margin-bottom:14px;"></i>
+          <h3 style="margin-bottom:8px;">Consultas con especialistas</h3>
+          <p style="color:var(--text-muted);">Resuelve dudas funcionales y técnicas relacionadas con tus proyectos y procesos empresariales.</p>
         </div>
-
-        <!-- Module 3 -->
-        <div class="module-card">
-          <div class="module-header">
-            <div class="module-info">
-              <div class="module-num">3</div>
-              <div class="module-title-text">
-                <h4>Módulo 3: Guías de Remisión Electrónicas (GRE) & Almacén</h4>
-                <div class="module-meta">3 Lecciones • 2 Horas Prácticas • Integración Inventario</div>
-              </div>
-            </div>
-            <i class="fa-solid fa-chevron-down" style="color: var(--text-muted);"></i>
-          </div>
-          <div class="module-body">
-            <ul class="lesson-list">
-              <li><i class="fa-solid fa-circle-check"></i> Configuración del módulo GRE Remitente (09) en Odoo 20.</li>
-              <li><i class="fa-solid fa-circle-check"></i> Traslado entre Establecimientos de la misma empresa vs Venta de Mercadería.</li>
-              <li><i class="fa-solid fa-circle-check"></i> Validación de datos del conductor, Licencia de Conducir y Placa del Vehículo.</li>
-            </ul>
-          </div>
+        <div class="glass-card">
+          <i class="fa-solid fa-users" style="font-size:1.9rem; color:var(--odoo-teal); margin-bottom:14px;"></i>
+          <h3 style="margin-bottom:8px;">Comunidad privada</h3>
+          <p style="color:var(--text-muted);">Comparte experiencias, buenas prácticas, soluciones y oportunidades con otros profesionales.</p>
         </div>
-
-        <!-- Module 4 -->
-        <div class="module-card">
-          <div class="module-header">
-            <div class="module-info">
-              <div class="module-num">4</div>
-              <div class="module-title-text">
-                <h4>Módulo 4: Contabilidad PCGE y Reportes SIRE SUNAT</h4>
-                <div class="module-meta">5 Lecciones • 4 Horas Prácticas • Caso Real Cierre</div>
-              </div>
-            </div>
-            <i class="fa-solid fa-chevron-down" style="color: var(--text-muted);"></i>
-          </div>
-          <div class="module-body">
-            <ul class="lesson-list">
-              <li><i class="fa-solid fa-circle-check"></i> Plan Contable General Empresarial 2020 adaptado a Odoo 20.</li>
-              <li><i class="fa-solid fa-circle-check"></i> Sincronización del Tipo de Cambio diario SUNAT/SBS.</li>
-              <li><i class="fa-solid fa-circle-check"></i> Generación y validación de estructuras TXT para el SIRE RVIE y RCE.</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ROI Calculator Section -->
-  <section id="calculadora" class="section" style="background: rgba(0, 160, 157, 0.03); border-top: 1px solid var(--border-glass);">
-    <div class="container">
-      <div class="glass-card roi-card">
-        <div>
-          <div class="section-subtitle">Calculadora de Impacto</div>
-          <h2 style="font-size: 2rem; margin-bottom: 16px;">¿Cuánto tiempo y dinero ahorrarás con Odoo 20?</h2>
-          <p style="color: var(--text-muted);">Mueve el deslizador para ver cuánto tiempo operativo en gestión SIRE y facturación manual automatizarás en tu empresa o estudio contable.</p>
-          
-          <div class="roi-slider-container">
-            <label style="font-weight: 700; color: var(--text-main);">Volumen de Comprobantes Emitidos/Recibidos por Mes:</label>
-            <input type="range" id="roi-slider" class="roi-slider" min="20" max="1000" step="20" value="150">
-            <div style="display: flex; justify-content: space-between; font-weight: 800; color: var(--odoo-teal);">
-              <span>20 comprobantes</span>
-              <span id="roi-invoice-count">150 comprobantes/mes</span>
-              <span>1000+ comprobantes</span>
-            </div>
-          </div>
-        </div>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-          <div class="roi-stat-box">
-            <div id="roi-hours-saved" class="roi-stat-number">38 hrs/mes</div>
-            <div style="font-size: 0.85rem; color: var(--text-muted);">Tiempo Operativo Ahorrado</div>
-          </div>
-          <div class="roi-stat-box" style="border-color: var(--peru-gold); background: rgba(230, 194, 0, 0.05);">
-            <div id="roi-money-saved" class="roi-stat-number" style="color: var(--peru-gold);">S/ 3,210</div>
-            <div style="font-size: 0.85rem; color: var(--text-muted);">Ahorro en Costos y Multas</div>
-          </div>
+        <div class="glass-card">
+          <i class="fa-solid fa-toolbox" style="font-size:1.9rem; color:var(--odoo-teal); margin-bottom:14px;"></i>
+          <h3 style="margin-bottom:8px;">Recursos reutilizables</h3>
+          <p style="color:var(--text-muted);">Plantillas, guías, ejemplos, prompts, módulos de práctica y material de apoyo para acelerar tu trabajo.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Pricing Cards Section -->
-  <section id="precios" class="section">
+  <section id="como-funciona" class="section" style="background: rgba(113,75,103,.08); border-top:1px solid var(--border-glass); border-bottom:1px solid var(--border-glass);">
     <div class="container">
       <div class="section-title-wrapper">
-        <div class="section-subtitle">Inversión Transparente</div>
-        <h2 class="section-title">Elige tu Plan y Asegura tu Vacante</h2>
-        <p class="section-description">Acceso inmediato a la plataforma de aprendizaje, instancias de prueba en Odoo 20 y certificados de participación.</p>
+        <div class="section-subtitle">Modelo flexible</div>
+        <h2 class="section-title">Tú decides cómo quieres aprender</h2>
+      </div>
+
+      <div class="roi-card">
+        <div class="glass-card">
+          <div class="module-num" style="margin-bottom:16px;">1</div>
+          <h3 style="font-size:1.35rem; margin-bottom:10px;">Compra cursos individuales</h3>
+          <p style="color:var(--text-muted); margin-bottom:16px;">Paga una sola vez por el curso que necesitas y conserva el acceso según las condiciones de cada programa.</p>
+          <ul class="lesson-list">
+            <li><i class="fa-solid fa-circle-check"></i> Ideal para objetivos concretos</li>
+            <li><i class="fa-solid fa-circle-check"></i> Pago único</li>
+            <li><i class="fa-solid fa-circle-check"></i> Certificado por curso</li>
+          </ul>
+        </div>
+
+        <div class="glass-card" style="border-color:var(--odoo-purple); box-shadow:var(--shadow-glow);">
+          <div class="module-num" style="margin-bottom:16px;">2</div>
+          <h3 style="font-size:1.35rem; margin-bottom:10px;">Accede con membresía anual</h3>
+          <p style="color:var(--text-muted); margin-bottom:16px;">Obtén una experiencia continua con acceso ampliado a cursos, actualizaciones y asesoría durante 12 meses.</p>
+          <ul class="lesson-list">
+            <li><i class="fa-solid fa-circle-check"></i> Formación continua</li>
+            <li><i class="fa-solid fa-circle-check"></i> Nuevos contenidos durante el año</li>
+            <li><i class="fa-solid fa-circle-check"></i> Acompañamiento y comunidad</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="membresias" class="section">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <div class="section-subtitle">Membresías anuales</div>
+        <h2 class="section-title">Aprende durante todo el año con acompañamiento</h2>
+        <p class="section-description">Planes pensados para quienes quieren mantenerse actualizados, implementar mejor y contar con un equipo experto al cual consultar.</p>
       </div>
 
       <div class="pricing-grid">
-        
-        <!-- Plan Basic -->
         <div class="pricing-card">
-          <h3 style="font-size: 1.3rem;">Plan Funcional</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">Para usuarios que buscan dominar el uso operativo.</p>
-          <div class="price-tag">S/ 390 <span>/ pago único</span></div>
+          <h3 style="font-size:1.3rem;">Membresía Essential</h3>
+          <p style="color:var(--text-muted); font-size:.9rem; margin-top:4px;">Para profesionales que quieren aprender de forma continua.</p>
+          <div class="price-tag">Anual <span>/ 12 meses</span></div>
           <ul class="feature-list">
-            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Acceso a los 4 Módulos Grabados</li>
-            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Plantillas Excel SIRE & Guías PDF</li>
-            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Acceso por 6 meses a la plataforma</li>
-            <li><i class="fa-solid fa-xmark" style="color: var(--text-dim);"></i> Instancia Privada Odoo 20 en la nube</li>
-            <li><i class="fa-solid fa-xmark" style="color: var(--text-dim);"></i> Certificado Consultor Funcional</li>
+            <li class="active"><i class="fa-solid fa-check" style="color:var(--odoo-teal);"></i> Acceso a cursos seleccionados</li>
+            <li class="active"><i class="fa-solid fa-check" style="color:var(--odoo-teal);"></i> Nuevas clases y actualizaciones</li>
+            <li class="active"><i class="fa-solid fa-check" style="color:var(--odoo-teal);"></i> Comunidad privada</li>
+            <li class="active"><i class="fa-solid fa-check" style="color:var(--odoo-teal);"></i> Recursos y plantillas</li>
+            <li><i class="fa-solid fa-xmark" style="color:var(--text-dim);"></i> Asesoría personalizada periódica</li>
           </ul>
-          <a href="#" class="btn-secondary btn-enroll" style="justify-content: center;">Elegir Plan Funcional</a>
+          <a href="#" class="btn-secondary btn-enroll" style="justify-content:center;">Quiero esta membresía</a>
         </div>
 
-        <!-- Plan Professional (Featured) -->
         <div class="pricing-card featured">
-          <div class="popular-badge">MÁS POPULAR</div>
-          <h3 style="font-size: 1.3rem;">Consultor Certificado</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">Para contadores y consultores que buscan certificarse.</p>
-          <div class="price-tag" style="color: var(--odoo-teal);">S/ 690 <span>/ pago único</span></div>
+          <div class="popular-badge">RECOMENDADO</div>
+          <h3 style="font-size:1.3rem;">Membresía Professional</h3>
+          <p style="color:var(--text-muted); font-size:.9rem; margin-top:4px;">Para consultores, desarrolladores y responsables de implementación.</p>
+          <div class="price-tag" style="color:var(--odoo-teal);">Anual <span>/ 12 meses</span></div>
           <ul class="feature-list">
-            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Todo lo del Plan Funcional</li>
-            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> <strong>Instancia Privada Odoo 20 Perú (30 días)</strong></li>
-            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Sesiones en Vivo de Preguntas & Respuestas</li>
-            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Certificado Oficial de Consultor Funcional</li>
-            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Grupo Privado de WhatsApp con Especialistas</li>
+            <li class="active"><i class="fa-solid fa-check" style="color:var(--odoo-teal);"></i> Todo lo incluido en Essential</li>
+            <li class="active"><i class="fa-solid fa-check" style="color:var(--odoo-teal);"></i> Acceso ampliado al catálogo</li>
+            <li class="active"><i class="fa-solid fa-check" style="color:var(--odoo-teal);"></i> Sesiones grupales de asesoría</li>
+            <li class="active"><i class="fa-solid fa-check" style="color:var(--odoo-teal);"></i> Revisión de casos y dudas reales</li>
+            <li class="active"><i class="fa-solid fa-check" style="color:var(--odoo-teal);"></i> Prioridad en nuevos talleres</li>
           </ul>
-          <a href="#" class="btn-primary btn-enroll" style="justify-content: center;">Inscribirme en Consultor</a>
+          <a href="#" class="btn-primary btn-enroll" style="justify-content:center;">Unirme a Professional</a>
         </div>
 
-        <!-- Plan Corporate -->
         <div class="pricing-card">
-          <h3 style="font-size: 1.3rem;">Plan Empresarial</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">Para equipos contables y empresas implementadoras.</p>
-          <div class="price-tag">S/ 1,490 <span>/ pago único</span></div>
+          <h3 style="font-size:1.3rem;">Membresía Business</h3>
+          <p style="color:var(--text-muted); font-size:.9rem; margin-top:4px;">Para empresas que necesitan capacitar y acompañar a su equipo.</p>
+          <div class="price-tag">Empresa <span>/ anual</span></div>
           <ul class="feature-list">
-            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Hasta 5 Licencias de Estudiantes</li>
-            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Asesoría Personalizada de 2 Horas</li>
-            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Revisión de Base de Datos Real de la Empresa</li>
-            <li class="active"><i class="fa-solid fa-check" style="color: var(--odoo-teal);"></i> Factura Comercial con IGV Incluido</li>
+            <li class="active"><i class="fa-solid fa-check" style="color:var(--odoo-teal);"></i> Acceso para varios usuarios</li>
+            <li class="active"><i class="fa-solid fa-check" style="color:var(--odoo-teal);"></i> Ruta de capacitación por perfil</li>
+            <li class="active"><i class="fa-solid fa-check" style="color:var(--odoo-teal);"></i> Sesiones privadas de asesoría</li>
+            <li class="active"><i class="fa-solid fa-check" style="color:var(--odoo-teal);"></i> Revisión de procesos de la empresa</li>
+            <li class="active"><i class="fa-solid fa-check" style="color:var(--odoo-teal);"></i> Soporte para adopción de Odoo e IA</li>
           </ul>
-          <a href="#" class="btn-secondary btn-enroll" style="justify-content: center;">Contactar Ventas B2B</a>
+          <a href="#" class="btn-secondary btn-enroll" style="justify-content:center;">Hablar con un asesor</a>
         </div>
+      </div>
 
+      <p style="text-align:center; color:var(--text-muted); margin-top:28px; font-size:.92rem;">
+        Los precios y el alcance final de cada membresía se publicarán antes del lanzamiento comercial.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:40px;">
+    <div class="container">
+      <div class="glass-card" style="text-align:center; padding:48px;">
+        <div class="section-subtitle">Gemastic Academy</div>
+        <h2 style="font-size:2rem; margin-bottom:14px;">No aprendas solo. Implementa acompañado.</h2>
+        <p style="color:var(--text-muted); max-width:720px; margin:0 auto 24px;">
+          Fórmate con contenidos prácticos y accede a especialistas que conocen Odoo, automatización e inteligencia artificial aplicada a negocios.
+        </p>
+        <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+          <a href="#cursos" class="btn-secondary"><i class="fa-solid fa-book-open"></i> Ver cursos</a>
+          <a href="#membresias" class="btn-primary"><i class="fa-solid fa-crown"></i> Ver membresías</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Modal Registration Form -->
   <div id="enroll-modal" class="modal-overlay">
     <div class="modal-box">
       <button id="close-modal" class="close-modal">&times;</button>
-      <h3 style="font-size: 1.5rem; margin-bottom: 8px;">Inscripción al Curso Odoo 20 Perú</h3>
-      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">Completa tus datos para enviarte los accesos inmediatos a la plataforma de aprendizaje.</p>
-
+      <h3 style="font-size:1.5rem; margin-bottom:8px;">Quiero más información</h3>
+      <p style="color:var(--text-muted); font-size:.9rem; margin-bottom:24px;">Déjanos tus datos y cuéntanos qué opción te interesa. Un asesor de Gemastic se pondrá en contacto contigo.</p>
       <form id="enroll-form">
         <div class="sim-form-group">
-          <label for="student-name">Nombre Completo:</label>
+          <label for="student-name">Nombre completo:</label>
           <input type="text" id="student-name" class="sim-input" placeholder="Ej. Juan Pérez" required>
         </div>
         <div class="sim-form-group">
-          <label for="student-email">Correo Electrónico (Para accesos):</label>
-          <input type="email" id="student-email" class="sim-input" placeholder="juan.perez@empresa.pe" required>
+          <label for="student-email">Correo electrónico:</label>
+          <input type="email" id="student-email" class="sim-input" placeholder="juan@empresa.com" required>
         </div>
         <div class="sim-form-group">
-          <label for="student-phone">Teléfono / WhatsApp Perú:</label>
+          <label for="student-phone">Teléfono / WhatsApp:</label>
           <input type="tel" id="student-phone" class="sim-input" placeholder="987654321" required>
         </div>
         <div class="sim-form-group">
-          <label for="student-plan">Plan Seleccionado:</label>
+          <label for="student-plan">Estoy interesado en:</label>
           <select id="student-plan" class="sim-select">
-            <option value="consultor">Consultor Certificado (S/ 690)</option>
-            <option value="funcional">Plan Funcional (S/ 390)</option>
-            <option value="empresarial">Plan Empresarial (S/ 1,490)</option>
+            <option value="curso">Comprar un curso individual</option>
+            <option value="essential">Membresía Essential</option>
+            <option value="professional">Membresía Professional</option>
+            <option value="business">Membresía Business</option>
           </select>
         </div>
-        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 16px;">
-          <i class="fa-solid fa-lock"></i> Confirmar Mi Registro
+        <button type="submit" class="btn-primary" style="width:100%; justify-content:center; margin-top:16px;">
+          <i class="fa-solid fa-paper-plane"></i> Solicitar información
         </button>
       </form>
     </div>
   </div>
 
-  <!-- Footer -->
   <footer>
     <div class="container">
-      <p>© 2026 Gemastic. Curso Funcional Odoo 20 Localización Peruana. Todos los derechos reservados.</p>
-      <p style="font-size: 0.8rem; margin-top: 8px;">Odoo es una marca registrada de Odoo S.A. Este curso es un programa de capacitación independiente sobre localización tributaria en Perú.</p>
+      <p>© 2026 Gemastic Academy. Formación especializada en Odoo, IA y Automatización.</p>
+      <p style="font-size:.8rem; margin-top:8px;">Odoo es una marca registrada de Odoo S.A. Gemastic desarrolla programas independientes de capacitación y asesoría profesional.</p>
     </div>
   </footer>
 
-  <!-- App JS -->
   <script src="app.js"></script>
 </body>
 </html>
